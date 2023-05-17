@@ -1,0 +1,40 @@
+<%- include('../partials/header.ejs')%>
+    <div class="form-section p-3">
+        <div class="container">
+            <form method="POST" action="/trades/<%=trade.id%>?_method=PUT">
+                <div class="row mb-3">
+                    <label for="cat" class="col-sm-2 col-form-label">Category</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="cat" name="category" value="<%= trade.category%>" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="title" class="col-sm-2 col-form-label">Title</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title" name="name" value="<%=trade.name%>" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="manufacturer" class="col-sm-2 col-form-label">Manufacturer</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="manufacturer" name="manufacturer" value="<%=trade.manufacturer%>" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="image-url" class="col-sm-2 col-form-label">Image Url</label>
+                    <div class="col-sm-10">
+                    <input type="url" class="form-control" id="image-url" name="image" value="<%=trade.image%>" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="description" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                        <textarea id="description" class="form-control" name="description" required minLength="10"> <%=trade.description%> </textarea>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary"> Update Trade</button>
+            </form>
+        </div>
+    </div>
+<%- include('../partials/footer.ejs')%>

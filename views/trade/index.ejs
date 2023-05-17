@@ -1,0 +1,34 @@
+<%- include('../partials/header.ejs')%>
+    <div class="content">
+        <%
+        const tradesByCategory = new Object();
+        for(let i =0; i<trades.length; i++){
+            const category = trades[i].category;
+            if(tradesByCategory.hasOwnProperty(category)){
+                tradesByCategory[category].push(trades[i]);
+            } else {
+                tradesByCategory[category] = [trades[i]];
+            }
+        }
+        categories = Object.keys(tradesByCategory);
+        categories.sort();
+        for( let i=0; i<categories.length; i++){
+        %>
+            <h2> <%=categories[i]%> </h1>
+            <ul>
+            <%
+            tradesByCategory[categories[i]].sort((a, b) => {
+                if(a.name < b.name) return -1;
+                if(a.name > b.name) return 1;
+                return 0;
+            });
+            console.log(tradesByCategory[categories[i]]);
+            %>
+            <%for(let j=0; j<tradesByCategory[categories[i]].length; j++){%>
+                <%tradeItem = tradesByCategory[categories[i]][j];%>
+                <li> <a href="/trades/<%=tradeItem.id%>"><%=tradeItem.name%> </a></li>
+            <%}%>
+            </ul>
+        <%}%>
+    </div>
+<%- include('../partials/footer.ejs')%>

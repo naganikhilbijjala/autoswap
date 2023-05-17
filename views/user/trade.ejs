@@ -1,0 +1,33 @@
+
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <% if(trades.length){ %>
+        <h2>Select the Car with which you want to trade</h2>
+        <form method="POST" action="/users/trade/<%=tradeId%>">
+        <table class="table table-striped table-bordered table-sm">
+            <thead class="table-dark">
+                <tr>
+                  <th scope="col">Select</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%trades.forEach(trade => {%>
+                <tr>
+                    <td><input type="radio" name="selectedTrade" value="<%=trade._id%>" required></td>
+                    <th scope="row"><a href="/trades/<%=trade._id%>"><p><%=trade.name%></p></a></th>
+                    <td><%=trade.category%></td>
+                    <td><%=trade.status%></td>
+                </tr>
+                <%});%>
+              <tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Trade</button>
+        </form>
+    <%} else {%>
+        <p>You have not created any trades</p>
+    <%}%>
+</div>
+<%- include('../partials/footer.ejs')%>

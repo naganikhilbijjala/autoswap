@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs')%>
+    <div class="mainContentIndex">
+        <img class="tradeImage" src="<%=trade.image%>" alt="<%=trade.name%>">
+        <h3><%=trade.name%></h3>
+        <small>Created <%= trade.createdAt.toLocaleString()%> by <%= trade.createdBy.firstName%></small>
+        <p><b>Manufacturer</b> : <%=trade.manufacturer%></p>
+        <p><b>Description</b> : <%=trade.description%></p>
+        <%if(user == trade.createdBy._id){%>
+            <form>
+                <button type="submit" class="btn btn-secondary" formmethod="GET" formaction="/trades/<%=trade.id%>/edit">Edit</button>
+                <button type="submit" class="btn btn-danger" formmethod="POST" formaction="/trades/<%=trade.id%>?_method=DELETE">Delete</button>
+            </form>
+        <%}else{%>
+            <form>
+                <button type="submit" class="btn btn-success" formmethod="GET" formaction="/users/trade/<%=trade._id%>"> Trade </button>
+                <%if(isWatchedTrade){%>
+                    <button type="submit" class="btn btn-primary" formmethod="POST" formaction="/users/unwatch/<%=trade._id%>?_method=PUT"> Unwatch </button>
+                <%} else {%>
+                    <button type="submit" class="btn btn-primary" formmethod="POST" formaction="/users/watch/<%=trade._id%>?_method=PUT"> Watch </button>
+                <%}%>
+            </form>
+        <%}%>
+    </div>
+<%- include('../partials/footer.ejs')%>

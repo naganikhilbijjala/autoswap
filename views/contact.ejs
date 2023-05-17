@@ -1,0 +1,35 @@
+<%- include('./partials/header.ejs')%>
+<div class="content">
+    <h2>Contact Us</h2>
+    <br> 
+    <p>
+        We would love to hear from you! If you have any questions, concerns or feedback regarding our website or the services we offer, please don't hesitate to reach out to us. Our customer support team is available 24/7 to assist you.
+        <br><br>
+        You can reach us through any of the following methods:
+        <br><br>
+        Phone: <a href="tel:+19809999999"><i class="fa fa-solid fa-phone"></i> +(1) 980-999-9999</a> <br>
+        Email: <a href="mailto:automotiveswap@gmail.com"><i class="fa fa-solid fa-envelope"></i> +automotiveswap@gmail.com</a> <br>
+        Mailing Address: University of North Carolina at Charlotte, NC, USA<br><br>
+
+        Alternatively, you can fill out the contact form below and we'll get back to you as soon as possible. Please make sure to provide us with as much detail as possible so that we can better assist you.
+        <form action="/" method="get">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+			</div>
+            <br>
+			<button type="submit" class="btn btn-primary">Send Message</button>
+		</form>
+        <br>
+        Thank you for choosing Automotive Swap! We value your feedback and strive to provide you with the best possible experience.
+    </p>
+</div>
+<%- include('./partials/footer.ejs')%>

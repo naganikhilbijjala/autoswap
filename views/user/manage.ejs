@@ -1,0 +1,36 @@
+
+<%- include('../partials/header.ejs')%>
+<div class = "content">
+    <% if(myTransactions.length){ %>
+        <h2>Welcome to AutoSwap</h2>
+        <table class="table table-striped table-bordered table-sm">
+              <tbody>
+                <%myTransactions.forEach(transaction => {%>
+                <tr>
+                    <td scope="row">
+                        <p><%=transaction[0]%></p>
+                        <img class="tradeImage" src="<%=transaction[1]%>" alt="<%=transaction[0]%>">
+                    </td>
+                    <td>
+                        <p><%=transaction[2]%></p>
+                        <img class="tradeImage" src="<%=transaction[3]%>" alt="<%=transaction[2]%>">
+                    </td>
+                    <td>
+                        <form>
+                            <%if(isCancel){%>
+                                <button type="submit" class="btn btn-danger" formmethod="GET" formaction="/users/trade/cancel/<%=tradeId%>?">Cancel Offer</button>
+                            <%}else{%>
+                                <button type="submit" class="btn btn-success" formmethod="GET" formaction="/users/trade/accept/<%=tradeId%>?">Accept</button>
+                                <button type="submit" class="btn btn-success" formmethod="GET" formaction="/users/trade/reject/<%=tradeId%>?">Reject</button>
+                        </form>
+                        <%}%>
+                    </td>
+                </tr>
+                <%});%>
+              <tbody>
+        </table>
+    <%} else {%>
+        <p>You have not created any trades</p>
+    <%}%>
+</div>
+<%- include('../partials/footer.ejs')%>

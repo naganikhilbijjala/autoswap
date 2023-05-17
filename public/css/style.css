@@ -1,0 +1,108 @@
+/* Start of Header */
+#topHeader{
+    background-color: ghostwhite;
+    border-bottom: 1px solid silver;
+    
+}
+
+#topHeader a{
+    color: #34495e;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+
+#bottomHeader{
+    background-color: #1C3659;
+}
+
+#bottomHeader a{
+    color: white;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.trades-link{
+    background-color: #1C3659;
+    color: white;
+}
+
+/* End of Header */
+
+.tradingLink{
+    background-color: #1C3659;
+    padding: 21px;
+}
+
+.tradingLink a{
+    color: white;
+}
+
+
+.content{
+    border: 2px solid #1C3659;
+    border-radius: 17px;
+    padding: 3%;
+    margin: 3%;
+    background-color: #D9BF8F;
+}
+
+.mainContentIndex{
+    border: 2px solid #1C3659;
+    border-radius: 17px;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3%;
+    background-color: #D9BF8F;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.tradeImage{
+    height: 150px;
+    width: 300px;
+}
+
+textarea{
+    height: 200px;
+    width: 100%;
+}
+
+/*Start of Footer*/
+
+.full-footer{
+    color: white;
+    font-size: 1px solid silver;
+    background-color: #3C4959;
+    width: 100%;
+}
+
+.full-footer a{
+    color: silver;
+}
+
+/*End of Footer*/
+
+/* Flash Message success and error styles */
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .error {
+    background: rgba(255, 102, 51, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }

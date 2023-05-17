@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "643f674f3ca4224eac5e6251"
+  },
+  "category": "Affordable Cars",
+  "name": "Honda Accord",
+  "manufacturer": "Honda",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGK0_tOzqpKyY-j33GpxD173yYimIsNy2Rw&usqp=CAU",
+  "description": "The Honda Accord is a popular mid-size sedan that has been in production since 1976. Known for its reliability, comfortable ride, and fuel efficiency, the Accord is a top choice for families, commuters, and anyone looking for a practical yet stylish vehicle. The Accord is available with a range of engines, including a hybrid option, and comes with a variety of features and amenities such as advanced safety technologies, infotainment systems, and luxurious interiors. With its reputation for quality and longevity, the Honda Accord is a great choice for anyone in the market for a reliable and versatile sedan.",
+  "createdBy": {
+    "$oid": "643f66c73ca4224eac5e6250"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:00:15.410Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:00:15.410Z"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f67d43ca4224eac5e6252"
+  },
+  "category": "Premium Cars",
+  "name": "Tesla Model X",
+  "manufacturer": "Tesla",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkajV2gKRUxAZjFJNy_h6cfWgfYmA38jQT8Q",
+  "description": "The Tesla Model X is an all-electric SUV that was introduced by Tesla Motors in 2015. It is known for its innovative Falcon Wing doors, which open upward and provide easy access to the second and third rows of seats. The Model X has impressive performance capabilities, with the ability to go from 0 to 60 mph in under 3 seconds. It also has an impressive range of up to 371 miles on a single charge, depending on the battery option selected. The Model X comes with a range of features, including advanced driver assistance systems, a high-tech infotainment system, and a spacious and luxurious interior. With its combination of performance, style, and sustainability, the Tesla Model X is a top choice for those looking for a cutting-edge SUV.\r\n",
+  "createdBy": {
+    "$oid": "643f66c73ca4224eac5e6250"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:02:28.913Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:02:28.913Z"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f68213ca4224eac5e6253"
+  },
+  "category": "Premium Cars",
+  "name": "BMW M5",
+  "manufacturer": "BMW",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEMcrMWsvaMa0QoSYN3n1ef0BERpqRug0SA",
+  "description": "The BMW M5 is a high-performance sports sedan that has been in production since 1984. It is known for its impressive power and handling capabilities, as well as its luxurious and high-tech interior. The M5 features a powerful twin-turbo V8 engine that delivers exceptional acceleration and speed, with the ability to go from 0 to 60 mph in under 3.5 seconds. It also comes with a range of advanced features, including a high-tech infotainment system, advanced driver assistance technologies, and a comfortable and spacious interior. The M5 is available in various models and trims, with different engine options, transmissions, and other features to suit a range of preferences and driving styles. With its combination of performance, luxury, and technology, the BMW M5 is a top choice for those seeking a high-performance sports sedan.",
+  "createdBy": {
+    "$oid": "643f66c73ca4224eac5e6250"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:03:45.716Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:03:45.716Z"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f68ff3ca4224eac5e6255"
+  },
+  "category": "Affordable Cars",
+  "name": "Chevrolet Impala",
+  "manufacturer": "Chevrolet",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5iL6B_LA8Bbn9cE5TQXC-TX4I7KK9cmA4Q",
+  "description": " The Chevrolet Impala is a full-size sedan that has been in production since the 1950s. It is known for its spacious interior, comfortable ride, and powerful engine options. The Impala is a versatile vehicle that can be used for commuting, family road trips, and even as a police car. It is available with a range of features and amenities, such as advanced safety technologies, infotainment systems, and luxurious interiors. With its reputation for quality and reliability, the Chevrolet Impala is a great choice for anyone in the market for a full-size sedan.\r\n ",
+  "createdBy": {
+    "$oid": "643f684c3ca4224eac5e6254"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:07:27.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:07:42.876Z"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f69713ca4224eac5e6256"
+  },
+  "category": "Affordable Cars",
+  "name": "Toyota Corola",
+  "manufacturer": "Toyota",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUg-uiaX_SfP64aTLCwntu8Ubn1uLD0RZfJQ",
+  "description": "The Toyota Corolla sedan is a compact car that is known for its reliability, efficiency, and affordability. This gasoline-powered model is equipped with a spacious and comfortable interior that provides a smooth and enjoyable driving experience. Standard features include power windows and locks, air conditioning, and a rearview camera, while higher trim levels add advanced safety features such as blind spot monitoring and lane departure warning. With a fuel-efficient engine, the Corolla sedan offers an excellent combination of performance and value.\r\n",
+  "createdBy": {
+    "$oid": "643f684c3ca4224eac5e6254"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:09:21.545Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:09:21.545Z"
+  },
+  "status": "Available",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "643f69c03ca4224eac5e6257"
+  },
+  "category": "Premium Cars",
+  "name": "Porsche 911",
+  "manufacturer": "Porsche",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnDsEx532oAa6uD2s8mW__21j_Mmr7_5qbQ",
+  "description": "The Porsche 911 is a sports car that has been in production since 1963. It is known for its iconic design, rear-engine layout, and excellent handling and performance capabilities. The 911 comes in a variety of models and trims, ranging from the Carrera to the GT2 RS, with various engine options, transmissions, and other features. It has a reputation for being a thrilling and engaging car to drive, with excellent acceleration and handling, and a distinctive exhaust note. The 911 also comes with a range of advanced features, such as a high-tech infotainment system, advanced driver assistance technologies, and luxurious interiors. With its combination of performance, style, and sophistication, the Porsche 911 is a top choice for those looking for a high-performance sports car.\r\n",
+  "createdBy": {
+    "$oid": "643f684c3ca4224eac5e6254"
+  },
+  "createdAt": {
+    "$date": "2023-04-19T04:10:40.351Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T04:10:40.351Z"
+  },
+  "status": "Available",
+  "__v": 0
+}]
