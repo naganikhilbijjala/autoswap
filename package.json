@@ -4,6 +4,7 @@
   "description": "Automotive swap is a place where you can swap cars for free with others",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
