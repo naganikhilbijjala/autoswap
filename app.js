@@ -18,15 +18,15 @@ const app = express();
 
 
 // configure application
-let port = 3000;
-let host = 'localhost';
+const port = process.env.PORT || 3000;
+// let host = 'localhost';
 app.set('view engine', 'ejs');
 
 
 // connect to database
 mongoose.connect(process.env.ATLAS_DB_URL, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
 .then(() => {
-        app.listen(port, host, () => {
+        app.listen(port, () => {
         console.log("Server is running on port", port);
     })
 })
