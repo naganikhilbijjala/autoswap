@@ -6,7 +6,9 @@ const mongoose = require('mongoose');
 mongoose.set('useFindAndModify', false);
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+const { MongoClient } = require('mongodb');
 const flash = require('connect-flash');
+require('dotenv').config();
 const tradeRoutes = require('./routes/tradeRoutes');
 const userRoutes = require('./routes/userRoutes');
 
@@ -22,7 +24,7 @@ app.set('view engine', 'ejs');
 
 
 // connect to database
-mongoose.connect('mongodb://localhost:27017/trade-project', { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
+mongoose.connect(process.env.ATLAS_DB_URL, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
 .then(() => {
         app.listen(port, host, () => {
         console.log("Server is running on port", port);
@@ -36,7 +38,7 @@ app.use(
         secret: "ajfeirf90aeu9eroejfoefj",
         resave: false,
         saveUninitialized: false,
-        store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/trade-project'}),
+        store: new MongoStore({mongoUrl: process.env.ATLAS_DB_URL}),
         cookie: {maxAge: 60*60*1000}
         })
 );
